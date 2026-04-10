@@ -120,7 +120,7 @@ Elektron,Tonverk,Audio Track: Mod,Mod Env: Attack,,,,,,,0,17,0,127,,0-based,,
 Elektron,Tonverk,Audio Track: Mod,Mod Env: Decay,,,,,,,0,18,0,127,,0-based,,
 Elektron,Tonverk,Audio Track: Mod,Mod Env: Sustain,,,,,,,0,19,0,127,,0-based,,
 Elektron,Tonverk,Audio Track: Mod,Mod Env: Release,,,,,,,0,20,0,127,,0-based,,
-Elektron,Tonverk,Audio Track: Mod,Mod Env: Reset,,,,,,,0,21,0,2,,0-based,,0: Off; 1: On
+Elektron,Tonverk,Audio Track: Mod,Mod Env: Reset,,,,,,,0,21,0,1,,0-based,,0: Off; 1: On
 Elektron,Tonverk,Audio Track: Mod,Mod Env: Delay,,,,,,,0,22,0,127,,0-based,,
 Elektron,Tonverk,Audio Track: Mod,Mod Env: Depth,,110,,0,127,97,0,24,0,16383,12512,centered,,
 Elektron,Tonverk,Audio Track: Mod,FX LFO 1: Speed,,111,,0,127,95,0,26,0,16383,12287,centered,,
@@ -633,7 +633,7 @@ Elektron,Tonverk,FX: Chrono Pitch,FX 2: LFO Speed,,62,,0,127,64,,,,,,centered,,
 Elektron,Tonverk,FX: Chrono Pitch,FX 2: Dry/Wet,,63,,0,127,64,,,,,,0-based,,
 Elektron,Tonverk,FX: Comb ± Filter,FX 1: Modulation Speed,,48,,0,127,,,,,,,0-based,,
 Elektron,Tonverk,FX: Comb ± Filter,FX 1: Modulation Depth,,49,,0,127,64,,,,,,0-based,,
-Elektron,Tonverk,FX: Comb ± Filter,FX 1: Start Phase,,50,,0,127,0,,,,,,0-based,,
+Elektron,Tonverk,FX: Comb ± Filter,FX 1: Start Phase,,50,,0,127,0,,,,,,0-based,,0: Off
 Elektron,Tonverk,FX: Comb ± Filter,FX 1: Detune,,51,,0,127,63,,,,,,centered,,
 Elektron,Tonverk,FX: Comb ± Filter,FX 1: Frequency,,52,,0,127,96,,,,,,0-based,,
 Elektron,Tonverk,FX: Comb ± Filter,FX 1: Feedback,,53,,0,127,0,,,,,,0-based,,
@@ -641,7 +641,7 @@ Elektron,Tonverk,FX: Comb ± Filter,FX 1: Lowpass Filter,,54,,0,127,127,,,,,,0-b
 Elektron,Tonverk,FX: Comb ± Filter,FX 1: Mix,,55,,0,127,127,,,,,,0-based,,
 Elektron,Tonverk,FX: Comb ± Filter,FX 2: Modulation Speed,,56,,0,127,,,,,,,0-based,,
 Elektron,Tonverk,FX: Comb ± Filter,FX 2: Modulation Depth,,57,,0,127,64,,,,,,0-based,,
-Elektron,Tonverk,FX: Comb ± Filter,FX 2: Start Phase,,58,,0,127,0,,,,,,0-based,,
+Elektron,Tonverk,FX: Comb ± Filter,FX 2: Start Phase,,58,,0,127,0,,,,,,0-based,,0: Off
 Elektron,Tonverk,FX: Comb ± Filter,FX 2: Detune,,59,,0,127,63,,,,,,centered,,
 Elektron,Tonverk,FX: Comb ± Filter,FX 2: Frequency,,60,,0,127,96,,,,,,0-based,,
 Elektron,Tonverk,FX: Comb ± Filter,FX 2: Feedback,,61,,0,127,0,,,,,,0-based,,
@@ -651,14 +651,14 @@ Elektron,Tonverk,FX: Compressor,FX 1: Threshold,,48,,0,127,32,,,,,,0-based,,
 Elektron,Tonverk,FX: Compressor,FX 1: Attack Time,,49,,0,127,24,,,,,,0-based,,
 Elektron,Tonverk,FX: Compressor,FX 1: Release Time,,50,,0,127,32,,,,,,0-based,,
 Elektron,Tonverk,FX: Compressor,FX 1: Makeup Gain,,51,,0,127,63,,,,,,0-based,,
-Elektron,Tonverk,FX: Compressor,FX 1: Ratio,,52,,0,127,3,,,,,,0-based,,0: 1.50; 1: 2.00; 2: 3.00; 3: 4.00; 4: 6.00; 5: 8.00; 6: 16.00; 7: 20.00
+Elektron,Tonverk,FX: Compressor,FX 1: Ratio,,52,,0,7,3,,,,,,0-based,,0: 1.50; 1: 2.00; 2: 3.00; 3: 4.00; 4: 6.00; 5: 8.00; 6: 16.00; 7: 20.00
 Elektron,Tonverk,FX: Compressor,FX 1: Sidechain Filter,,54,,0,127,63,,,,,,centered,,
 Elektron,Tonverk,FX: Compressor,FX 1: Mix,,55,,0,127,0,,,,,,0-based,,
 Elektron,Tonverk,FX: Compressor,FX 2: Threshold,,56,,0,127,,,,,,,0-based,,
 Elektron,Tonverk,FX: Compressor,FX 2: Attack Time,,57,,0,127,,,,,,,0-based,,
 Elektron,Tonverk,FX: Compressor,FX 2: Release Time,,58,,0,127,,,,,,,0-based,,
 Elektron,Tonverk,FX: Compressor,FX 2: Makeup Gain,,59,,0,127,,,,,,,0-based,,
-Elektron,Tonverk,FX: Compressor,FX 2: Ratio,,60,,0,127,3,,,,,,0-based,,0: 1.50; 1: 2.00; 2: 3.00; 3: 4.00; 4: 6.00; 5: 8.00; 6: 16.00; 7: 20.00
+Elektron,Tonverk,FX: Compressor,FX 2: Ratio,,60,,0,7,3,,,,,,0-based,,0: 1.50; 1: 2.00; 2: 3.00; 3: 4.00; 4: 6.00; 5: 8.00; 6: 16.00; 7: 20.00
 Elektron,Tonverk,FX: Compressor,FX 2: Sidechain Filter,,62,,0,127,63,,,,,,centered,,
 Elektron,Tonverk,FX: Compressor,FX 2: Mix,,63,,0,127,0,,,,,,0-based,,
 Elektron,Tonverk,FX: Daisy Delay,FX 1: Drive,,48,,0,127,32,,,,,,0-based,,
@@ -743,15 +743,15 @@ Elektron,Tonverk,FX: Filterbank,FX 2: Gain G,,62,,0,127,63,,,,,,centered,,
 Elektron,Tonverk,FX: Filterbank,FX 2: Gain H,,63,,0,127,63,,,,,,centered,,
 Elektron,Tonverk,FX: Frequency Warper,FX 1: LFO Speed,,48,,0,127,,,,,,,0-based,,
 Elektron,Tonverk,FX: Frequency Warper,FX 1: LFO Amount,,49,,0,127,0,,,,,,0-based,,
-Elektron,Tonverk,FX: Frequency Warper,FX 1: LFO Start Phase,,50,,0,127,0,,,,,,0-based,,
-Elektron,Tonverk,FX: Frequency Warper,FX 1: LFO Phase Offset,,51,,0,127,0,,,,,,0-based,,0:Off
+Elektron,Tonverk,FX: Frequency Warper,FX 1: LFO Start Phase,,50,,0,127,0,,,,,,0-based,,0: Off
+Elektron,Tonverk,FX: Frequency Warper,FX 1: LFO Phase Offset,,51,,0,127,0,,,,,,0-based,,
 Elektron,Tonverk,FX: Frequency Warper,FX 1: Shift Amount,,52,,0,127,0,,,,,,0-based,,
 Elektron,Tonverk,FX: Frequency Warper,FX 1: Stereo Spread,,53,,0,127,0,,,,,,0-based,,
 Elektron,Tonverk,FX: Frequency Warper,FX 1: Sideband,,54,,0,127,127,,,,,,0-based,,
 Elektron,Tonverk,FX: Frequency Warper,FX 1: Mix,,55,,0,127,0,,,,,,0-based,,
 Elektron,Tonverk,FX: Frequency Warper,FX 2: LFO Speed,,56,,0,127,,,,,,,0-based,,
 Elektron,Tonverk,FX: Frequency Warper,FX 2: LFO Amount,,57,,0,127,0,,,,,,0-based,,
-Elektron,Tonverk,FX: Frequency Warper,FX 2: LFO Start Phase,,58,,0,127,0,,,,,,0-based,,0:Off
+Elektron,Tonverk,FX: Frequency Warper,FX 2: LFO Start Phase,,58,,0,127,0,,,,,,0-based,,0: Off
 Elektron,Tonverk,FX: Frequency Warper,FX 2: LFO Phase Offset,,59,,0,127,0,,,,,,0-based,,
 Elektron,Tonverk,FX: Frequency Warper,FX 2: Shift Amount,,60,,0,127,0,,,,,,0-based,,
 Elektron,Tonverk,FX: Frequency Warper,FX 2: Stereo Spread,,61,,0,127,0,,,,,,0-based,,
