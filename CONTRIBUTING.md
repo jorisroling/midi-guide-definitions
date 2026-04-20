@@ -126,11 +126,9 @@ For example, consider a synth with three LFOs, with each LFO having many paramet
 | LFO 1 | Speed |
 | LFO 1 | Shape |
 | LFO 1 | ... |
-
 | LFO 2 | Speed |
 | LFO 2 | Shape |
 | LFO 2 | ... |
-
 | LFO 3 | Speed |
 | LFO 3 | Shape |
 | LFO 3 | ... |
@@ -158,7 +156,6 @@ Consider a synth with two tracks, and each track has its own two LFOs. Its param
 | Track 1: LFOs | LFO 1 shape |
 | Track 1: LFOs | LFO 2 speed |
 | Track 1: LFOs | LFO 2 shape |
-
 | Track 2: LFOs | LFO 1 speed |
 | Track 2: LFOs | LFO 1 shape |
 | Track 2: LFOs | LFO 2 speed |
@@ -254,7 +251,7 @@ For instance, if CC24 controls filter cutoff when your synth is in Mode 1, and F
 
 Usually, the body of a synth's manual will use logical values, rather than actual values, for parameters. 
 
-Consider a Coarse Pitch knob on a synth. It can change the pitch to one of 24 discrete values between -3 semitones and +4 semitones, with a default value of 0. 
+Consider a Coarse Pitch knob on a synth. It can change the pitch to one of 7 discrete values between -3 semitones and +4 semitones, with a default value of 0.
 
 This parameter's usage should **not** be documented as `-3~4: Coarse pitch`, and its default is not `0`. 
 
@@ -266,7 +263,7 @@ Here's another one:
 
 `61: -3st; 62: -2st; 63: -1st; 64: 0; 65: +1st; 66: +2st; 67: +3st; 68: +4st` (default: 64)
 
-What's the correct one? Well, if it doesn't say in the MIDI implementation reference in the manual, and you're not willing to poke at the synth to reverse engineer it, you can't tell. The manual's logical values don't give you enough to go on, and you should leave the `usage` column empty. 
+Which is correct? Well, if it doesn't say in the MIDI implementation reference in the manual, and you're not willing to poke at the synth to reverse engineer it, you can't tell. The manual's logical values don't give you enough to go on, and you should leave the `usage` column empty.
 
 ### Instruments with mappable MIDI CC (MIDI Learn)
 
