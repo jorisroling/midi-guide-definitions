@@ -25,10 +25,10 @@ Tasty Chips,GR-Mega,Multitimbral,Layer 1 preset,,,,,,,1,47,0,127,,0-based,,0~127
 Tasty Chips,GR-Mega,Multitimbral,Layer 2 preset,,,,,,,1,48,0,127,,0-based,,0~127: Preset 1 to preset 128
 Tasty Chips,GR-Mega,Multitimbral,Layer 3 preset,,,,,,,1,49,0,127,,0-based,,0~127: Preset 1 to preset 128
 Tasty Chips,GR-Mega,Multitimbral,Layer 4 preset,,,,,,,1,50,0,127,,0-based,,0~127: Preset 1 to preset 128
-Tasty Chips,GR-Mega,Multitimbral,Layer 1 MIDI channel,,,,,,,1,30,0,15,,0-based,Manual lists NRPN 158 twice — also assigned to Pitch envelope release curve,0~15: Channel 1 to channel 16
-Tasty Chips,GR-Mega,Multitimbral,Layer 2 MIDI channel,,,,,,,1,31,0,15,,0-based,Manual lists NRPN 159 twice — also assigned to Pitch envelope invert,0~15: Channel 1 to channel 16
+Tasty Chips,GR-Mega,Multitimbral,Layer 1 MIDI channel,,,,,,,1,30,0,15,,0-based,Manual lists NRPN 158 twice - also assigned to Pitch envelope release curve,0~15: Channel 1 to channel 16
+Tasty Chips,GR-Mega,Multitimbral,Layer 2 MIDI channel,,,,,,,1,31,0,15,,0-based,Manual lists NRPN 159 twice - also assigned to Pitch envelope invert,0~15: Channel 1 to channel 16
 Tasty Chips,GR-Mega,Multitimbral,Layer 3 MIDI channel,,,,,,,1,32,0,15,,0-based,,0~15: Channel 1 to channel 16
-Tasty Chips,GR-Mega,Multitimbral,Layer 4 MIDI channel,,,,,,,1,33,0,15,,0-based,Manual lists NRPN 161 twice — also assigned to Filter envelope attack curve,0~15: Channel 1 to channel 16
+Tasty Chips,GR-Mega,Multitimbral,Layer 4 MIDI channel,,,,,,,1,33,0,15,,0-based,Manual lists NRPN 161 twice - also assigned to Filter envelope attack curve,0~15: Channel 1 to channel 16
 Tasty Chips,GR-Mega,Multitimbral,Scan layer 1,,,,,,,1,12,0,16383,,0-based,,
 Tasty Chips,GR-Mega,Multitimbral,Scan layer 2,,,,,,,1,13,0,16383,,0-based,,
 Tasty Chips,GR-Mega,Multitimbral,Scan layer 3,,,,,,,1,14,0,16383,,0-based,,
@@ -47,8 +47,8 @@ Tasty Chips,GR-Mega,Granular engine,Grain window amplitude modulation,Amplitude 
 Tasty Chips,GR-Mega,Granular engine,Position,,8,,0,127,,0,8,0,16383,,0-based,,0~127: Sample start to sample end
 Tasty Chips,GR-Mega,Granular engine,Rate or density,Grain rate or density depending on grain ratio mode,9,,0,127,,0,9,0,16383,,0-based,,
 Tasty Chips,GR-Mega,Granular engine,Grain rate,,,,,,,7,110,0,16383,,0-based,,
-Tasty Chips,GR-Mega,Granular engine,Grain size,,12,,0,127,,0,12,0,16383,,0-based,,0~127: 0.1 ms to 5 s
-Tasty Chips,GR-Mega,Granular engine,Spray,,13,,0,127,,0,13,0,16383,,0-based,"In spectral mode, max value represents full FFT block size",0~127: 0 s to full sample size
+Tasty Chips,GR-Mega,Granular engine,Grain size,,12,,0,127,,0,12,0,16383,,0-based,,0~127: 0.1ms to 5s
+Tasty Chips,GR-Mega,Granular engine,Spray,,13,,0,127,,0,13,0,16383,,0-based,"In spectral mode, max value represents full FFT block size",0~127: 0s to full sample size
 Tasty Chips,GR-Mega,Granular engine,Pan spray,,11,,0,127,,0,11,0,16383,,0-based,,0: No spray; 127: Full stereo field
 Tasty Chips,GR-Mega,Granular engine,Panning,,10,,0,127,,0,10,0,16383,,centered,,0: 100% left; 64: Center; 127: 100% right
 Tasty Chips,GR-Mega,Granular engine,Mid-side,,17,,0,127,,0,17,0,16383,,centered,,0: 100% left; 64: Center; 127: 100% right
@@ -67,60 +67,60 @@ Tasty Chips,GR-Mega,Granular engine,Grain clock sync,,19,,0,1,,,,,,,0-based,,
 Tasty Chips,GR-Mega,Granular engine,Scan clock sync,,20,,0,1,,,,,,,0-based,,
 Tasty Chips,GR-Mega,Granular engine,Grain key sync,,21,,0,1,,,,,,,0-based,,
 Tasty Chips,GR-Mega,Granular engine,Scan key sync,,22,,0,3,,,,,,,0-based,,0: Off; 1: On; 2: Legato; 3: Poly
-Tasty Chips,GR-Mega,Granular engine,Glide time,,24,,0,127,,0,24,0,16383,,0-based,,0~127: 0 ms to 2000 ms
+Tasty Chips,GR-Mega,Granular engine,Glide time,,24,,0,127,,0,24,0,16383,,0-based,,0~127: 0ms to 2000ms
 Tasty Chips,GR-Mega,Granular engine,Glide always,,25,,0,1,,,,,,,0-based,,
-Tasty Chips,GR-Mega,Granular engine,Glide / portamento,,84,,0,127,,0,84,0,16383,,0-based,,0~127: 0 ms to 2000 ms
+Tasty Chips,GR-Mega,Granular engine,Glide / portamento,,84,,0,127,,0,84,0,16383,,0-based,,0~127: 0ms to 2000ms
 Tasty Chips,GR-Mega,Granular engine,Reserved,,18,,0,127,,,,,,,0-based,Reserved (formerly patch volume),
 Tasty Chips,GR-Mega,Sampling,Dry audio input volume,,42,,0,127,,0,42,0,16383,,0-based,,
 Tasty Chips,GR-Mega,Sampling,Wet (granulated) volume,,43,,0,127,,0,43,0,16383,,0-based,,
-Tasty Chips,GR-Mega,Sampling,Record trigger level,,40,,0,127,,0,40,0,16383,,0-based,,0: Off; 1~127: -80 dB to 0 dB
+Tasty Chips,GR-Mega,Sampling,Record trigger level,,40,,0,127,,0,40,0,16383,,0-based,,0: Off; 1~127: -80dB to 0dB
 Tasty Chips,GR-Mega,Sampling,Record sample,Value is ignored; acts as a toggle,41,,,,,,,,,,0-based,,
 Tasty Chips,GR-Mega,Sampling,Input level,,,,,,,2,38,0,16383,,0-based,,
 Tasty Chips,GR-Mega,Sampling,Anti-alias,,,,,,,1,82,0,1,,0-based,,
 Tasty Chips,GR-Mega,Sampling,Tape slew,,,,,,,1,83,0,16383,,0-based,,
-Tasty Chips,GR-Mega,Filter,Low-pass filter cutoff,,50,,0,127,,0,50,0,16383,,0-based,,0~127: 0 Hz to 20 kHz
+Tasty Chips,GR-Mega,Filter,Low-pass filter cutoff,,50,,0,127,,0,50,0,16383,,0-based,,0~127: 0Hz to 20kHz
 Tasty Chips,GR-Mega,Filter,Low-pass filter resonance,,51,,0,127,,0,51,0,16383,,0-based,,
-Tasty Chips,GR-Mega,Filter,High-pass filter cutoff,,52,,0,127,,0,52,0,16383,,0-based,,0~127: 0 Hz to 20 kHz
+Tasty Chips,GR-Mega,Filter,High-pass filter cutoff,,52,,0,127,,0,52,0,16383,,0-based,,0~127: 0Hz to 20kHz
 Tasty Chips,GR-Mega,Filter,High-pass filter resonance,,53,,0,127,,0,53,0,16383,,0-based,,
 Tasty Chips,GR-Mega,Filter,Bypass filter,,,,,,,2,33,0,1,,0-based,,0: Filter active; 1: Filter bypassed
 Tasty Chips,GR-Mega,Filter,Filter routing,,,,,,,2,37,0,2,,0-based,,0: LPF only; 1: LPF and HPF; 2: HPF
 Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope amount,,54,,0,127,,0,54,0,16383,,centered,,0~127: -1.0 to +1.0
-Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope attack time,,55,,0,127,,0,55,0,16383,,0-based,,0~127: 0 ms to 45 s
-Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope decay time,,56,,0,127,,0,56,0,16383,,0-based,,0~127: 0 ms to 45 s
+Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope attack time,,55,,0,127,,0,55,0,16383,,0-based,,0~127: 0ms to 45s
+Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope decay time,,56,,0,127,,0,56,0,16383,,0-based,,0~127: 0ms to 45s
 Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope sustain level,,57,,0,127,,0,57,0,16383,,0-based,,
-Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope release time,,58,,0,127,,0,58,0,16383,,0-based,,0~127: 0 ms to 45 s
+Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope release time,,58,,0,127,,0,58,0,16383,,0-based,,0~127: 0ms to 45s
 Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope attack curve,,,,,,,1,28,0,16383,,0-based,,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope decay curve,,,,,,,1,29,0,16383,,0-based,,0~16383: Low flat to linear to high flat
-Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope release curve,,,,,,,1,30,0,16383,,0-based,Manual lists NRPN 158 twice — also assigned to Layer 1 MIDI channel,0~16383: Low flat to linear to high flat
-Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope invert,,,,,,,1,31,0,1,,0-based,Manual lists NRPN 159 twice — also assigned to Layer 2 MIDI channel,
+Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope release curve,,,,,,,1,30,0,16383,,0-based,Manual lists NRPN 158 twice - also assigned to Layer 1 MIDI channel,0~16383: Low flat to linear to high flat
+Tasty Chips,GR-Mega,Pitch envelope,Pitch envelope invert,,,,,,,1,31,0,1,,0-based,Manual lists NRPN 159 twice - also assigned to Layer 2 MIDI channel,
 Tasty Chips,GR-Mega,Filter envelope,Filter envelope amount,,59,,0,127,,0,59,0,16383,,centered,,0~127: -1.0 to +1.0
-Tasty Chips,GR-Mega,Filter envelope,Filter envelope attack time,,60,,0,127,,0,60,0,16383,,0-based,,0~127: 0 ms to 45 s
-Tasty Chips,GR-Mega,Filter envelope,Filter envelope decay time,,61,,0,127,,0,61,0,16383,,0-based,,0~127: 0 ms to 45 s
+Tasty Chips,GR-Mega,Filter envelope,Filter envelope attack time,,60,,0,127,,0,60,0,16383,,0-based,,0~127: 0ms to 45s
+Tasty Chips,GR-Mega,Filter envelope,Filter envelope decay time,,61,,0,127,,0,61,0,16383,,0-based,,0~127: 0ms to 45s
 Tasty Chips,GR-Mega,Filter envelope,Filter envelope sustain level,,62,,0,127,,0,62,0,16383,,0-based,,
-Tasty Chips,GR-Mega,Filter envelope,Filter envelope release time,,63,,0,127,,0,63,0,16383,,0-based,,0~127: 0 ms to 45 s
-Tasty Chips,GR-Mega,Filter envelope,Filter envelope attack curve,,,,,,,1,33,0,16383,,0-based,Manual lists NRPN 161 twice — also assigned to Layer 4 MIDI channel,0~16383: Low flat to linear to high flat
+Tasty Chips,GR-Mega,Filter envelope,Filter envelope release time,,63,,0,127,,0,63,0,16383,,0-based,,0~127: 0ms to 45s
+Tasty Chips,GR-Mega,Filter envelope,Filter envelope attack curve,,,,,,,1,33,0,16383,,0-based,Manual lists NRPN 161 twice - also assigned to Layer 4 MIDI channel,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Filter envelope,Filter envelope decay curve,,,,,,,1,34,0,16383,,0-based,,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Filter envelope,Filter envelope release curve,,,,,,,1,35,0,16383,,0-based,,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Filter envelope,Filter envelope invert,,,,,,,1,36,0,1,,0-based,,
 Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope amount,,65,,0,127,,0,65,0,16383,,centered,,0~127: -1.0 to +1.0
-Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope attack time,,66,,0,127,,0,66,0,16383,,0-based,,0~127: 0 ms to 45 s
-Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope decay time,,67,,0,127,,0,67,0,16383,,0-based,,0~127: 0 ms to 45 s
+Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope attack time,,66,,0,127,,0,66,0,16383,,0-based,,0~127: 0ms to 45s
+Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope decay time,,67,,0,127,,0,67,0,16383,,0-based,,0~127: 0ms to 45s
 Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope sustain level,,68,,0,127,,0,68,0,16383,,0-based,,
-Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope release time,,69,,0,127,,0,69,0,16383,,0-based,,0~127: 0 ms to 45 s
+Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope release time,,69,,0,127,,0,69,0,16383,,0-based,,0~127: 0ms to 45s
 Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope attack curve,,,,,,,1,38,0,16383,,0-based,,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope decay curve,,,,,,,1,39,0,16383,,0-based,,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Amplifier envelope,Amplifier envelope release curve,,,,,,,1,40,0,16383,,0-based,,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Aux envelope,Aux envelope amount,,70,,0,127,,0,70,0,16383,,centered,,0~127: -1.0 to +1.0
-Tasty Chips,GR-Mega,Aux envelope,Aux envelope attack time,,71,,0,127,,0,71,0,16383,,0-based,,0~127: 0 ms to 45 s
-Tasty Chips,GR-Mega,Aux envelope,Aux envelope decay time,,72,,0,127,,0,72,0,16383,,0-based,,0~127: 0 ms to 45 s
+Tasty Chips,GR-Mega,Aux envelope,Aux envelope attack time,,71,,0,127,,0,71,0,16383,,0-based,,0~127: 0ms to 45s
+Tasty Chips,GR-Mega,Aux envelope,Aux envelope decay time,,72,,0,127,,0,72,0,16383,,0-based,,0~127: 0ms to 45s
 Tasty Chips,GR-Mega,Aux envelope,Aux envelope sustain level,,73,,0,127,,0,73,0,16383,,0-based,,
-Tasty Chips,GR-Mega,Aux envelope,Aux envelope release time,,75,,0,127,,0,75,0,16383,,0-based,,0~127: 0 ms to 45 s
+Tasty Chips,GR-Mega,Aux envelope,Aux envelope release time,,75,,0,127,,0,75,0,16383,,0-based,,0~127: 0ms to 45s
 Tasty Chips,GR-Mega,Aux envelope,Aux envelope attack curve,,,,,,,1,43,0,16383,,0-based,,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Aux envelope,Aux envelope decay curve,,,,,,,1,44,0,16383,,0-based,,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Aux envelope,Aux envelope release curve,,,,,,,1,45,0,16383,,0-based,,0~16383: Low flat to linear to high flat
 Tasty Chips,GR-Mega,Aux envelope,Aux envelope invert,,,,,,,1,46,0,1,,0-based,,
 Tasty Chips,GR-Mega,LFO 1,LFO 1 clock sync,,88,,0,2,,,,,,,0-based,,0: Free; 1: MIDI; 2: Sequencer
-Tasty Chips,GR-Mega,LFO 1,LFO 1 frequency,,89,,0,127,,0,89,0,16383,,0-based,,0~127: Stopped to 50 Hz
+Tasty Chips,GR-Mega,LFO 1,LFO 1 frequency,,89,,0,127,,0,89,0,16383,,0-based,,0~127: Stopped to 50Hz
 Tasty Chips,GR-Mega,LFO 1,LFO 1 waveform,,90,,0,5,,,,,,,0-based,,0: Sine; 1: Triangle; 2: Saw; 3: Reverse saw; 4: Square; 5: Random
 Tasty Chips,GR-Mega,LFO 1,LFO 1 amount,,91,,0,127,,0,91,0,16383,,centered,,0~127: -1.0 to +1.0
 Tasty Chips,GR-Mega,LFO 1,LFO 1 destination,See modulation destinations table,92,,0,90,,,,,,,0-based,,
@@ -129,7 +129,7 @@ Tasty Chips,GR-Mega,LFO 1,LFO 1 amplitude quantization,,,,,,,1,64,0,16383,,0-bas
 Tasty Chips,GR-Mega,LFO 1,LFO 1 polarity,,,,,,,1,68,0,3,,0-based,,0: Unipolar +; 1: Unipolar -; 2: Bipolar +; 3: Bipolar -
 Tasty Chips,GR-Mega,LFO 1,LFO 1 key sync,,,,,,,1,56,0,1,,0-based,,
 Tasty Chips,GR-Mega,LFO 2,LFO 2 clock sync,,93,,0,2,,,,,,,0-based,,0: Free; 1: MIDI; 2: Sequencer
-Tasty Chips,GR-Mega,LFO 2,LFO 2 frequency,,94,,0,127,,0,94,0,16383,,0-based,,0~127: Stopped to 50 Hz
+Tasty Chips,GR-Mega,LFO 2,LFO 2 frequency,,94,,0,127,,0,94,0,16383,,0-based,,0~127: Stopped to 50Hz
 Tasty Chips,GR-Mega,LFO 2,LFO 2 waveform,,95,,0,5,,,,,,,0-based,,0: Sine; 1: Triangle; 2: Saw; 3: Reverse saw; 4: Square; 5: Random
 Tasty Chips,GR-Mega,LFO 2,LFO 2 amount,,96,,0,127,,0,96,0,16383,,centered,,0~127: -1.0 to +1.0
 Tasty Chips,GR-Mega,LFO 2,LFO 2 destination,See modulation destinations table,97,,0,90,,,,,,,0-based,,
@@ -138,7 +138,7 @@ Tasty Chips,GR-Mega,LFO 2,LFO 2 amplitude quantization,,,,,,,1,65,0,16383,,0-bas
 Tasty Chips,GR-Mega,LFO 2,LFO 2 polarity,,,,,,,1,69,0,3,,0-based,,0: Unipolar +; 1: Unipolar -; 2: Bipolar +; 3: Bipolar -
 Tasty Chips,GR-Mega,LFO 2,LFO 2 key sync,,,,,,,1,57,0,1,,0-based,,
 Tasty Chips,GR-Mega,LFO 3,LFO 3 clock sync,,102,,0,2,,,,,,,0-based,,0: Free; 1: MIDI; 2: Sequencer
-Tasty Chips,GR-Mega,LFO 3,LFO 3 frequency,,103,,0,127,,0,103,0,16383,,0-based,,0~127: Stopped to 50 Hz
+Tasty Chips,GR-Mega,LFO 3,LFO 3 frequency,,103,,0,127,,0,103,0,16383,,0-based,,0~127: Stopped to 50Hz
 Tasty Chips,GR-Mega,LFO 3,LFO 3 waveform,,104,,0,5,,,,,,,0-based,,0: Sine; 1: Triangle; 2: Saw; 3: Reverse saw; 4: Square; 5: Random
 Tasty Chips,GR-Mega,LFO 3,LFO 3 amount,,105,,0,127,,0,105,0,16383,,centered,,0~127: -1.0 to +1.0
 Tasty Chips,GR-Mega,LFO 3,LFO 3 destination,See modulation destinations table,107,,0,90,,,,,,,0-based,,
@@ -149,7 +149,7 @@ Tasty Chips,GR-Mega,LFO 3,LFO 3 key sync,,,,,,,1,58,0,1,,0-based,,
 Tasty Chips,GR-Mega,LFO 3,LFO 3 clock multiplier,,,,,,,7,114,0,127,,0-based,,0~127: 1 to 128
 Tasty Chips,GR-Mega,LFO 3,LFO 3 clock divisor,,,,,,,7,116,0,127,,0-based,,0~127: 1 to 128
 Tasty Chips,GR-Mega,LFO 4,LFO 4 clock sync,,108,,0,2,,,,,,,0-based,,0: Free; 1: MIDI; 2: Sequencer
-Tasty Chips,GR-Mega,LFO 4,LFO 4 frequency,,109,,0,127,,0,109,0,16383,,0-based,,0~127: Stopped to 50 Hz
+Tasty Chips,GR-Mega,LFO 4,LFO 4 frequency,,109,,0,127,,0,109,0,16383,,0-based,,0~127: Stopped to 50Hz
 Tasty Chips,GR-Mega,LFO 4,LFO 4 waveform,,110,,0,5,,,,,,,0-based,,0: Sine; 1: Triangle; 2: Saw; 3: Reverse saw; 4: Square; 5: Random
 Tasty Chips,GR-Mega,LFO 4,LFO 4 amount,,111,,0,127,,0,111,0,16383,,centered,,0~127: -1.0 to +1.0
 Tasty Chips,GR-Mega,LFO 4,LFO 4 destination,See modulation destinations table,112,,0,90,,,,,,,0-based,,
