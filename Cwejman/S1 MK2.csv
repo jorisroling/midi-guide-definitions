@@ -14,7 +14,7 @@ Cwejman,S1 MK2,CV outputs,Control voltage 4 range (scaling),Scaling for controll
 Cwejman,S1 MK2,CV outputs,Control voltage 4 range (accent threshold),Note-On velocity threshold at which CV4 goes to 5V when CV4 Function is Accent,,,,,,0,11,0,127,,0-based,Applies only when CV4 Function = 123 (Accent),0~127: Velocity threshold
 Cwejman,S1 MK2,CV outputs,Control voltage 5 range (scaling),Scaling for controllers/velocity/aftertouch when CV5 Function is not Accent,,,,,,0,12,0,63,32,0-based,Default 32 = 5V full swing at data=127 (100%); 64 = 200%; 16 = 50%,0~63: 0% to 200% scaling
 Cwejman,S1 MK2,CV outputs,Control voltage 5 range (accent threshold),Note-On velocity threshold at which CV5 goes to 5V when CV5 Function is Accent,,,,,,0,12,0,127,,0-based,Applies only when CV5 Function = 123 (Accent),0~127: Velocity threshold
-Cwejman,S1 MK2,CV outputs,Control voltage 6 range,Pitch wheel range in semitones,,,,,,0,13,0,24,24,0-based,Default is ±24 semitones,,
+Cwejman,S1 MK2,CV outputs,Control voltage 6 range,Pitch wheel range in semitones,,,,,,0,13,0,24,24,0-based,Default is ±24 semitones,
 Cwejman,S1 MK2,Pedals,Hold pedal,,64,,0,127,,,,,,,0-based,,
 Cwejman,S1 MK2,Pedals,Legato pedal,,68,,0,127,,,,,,,0-based,Received on MIDI channel+1; causes legato effect by not triggering Trig1 on Note-On,
 Cwejman,S1 MK2,Channel mode,All sound off,,120,,0,127,,,,,,,0-based,,
