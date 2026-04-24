@@ -5,16 +5,16 @@ KORG,EMX-1,Synth OSC,OSC edit 2,Second oscillator edit parameter,15,,0,127,,,,,,
 KORG,EMX-1,Synth OSC,Synth wave,Selects the synth waveform,,,,,,8,1,0,75,,0-based,Sent on the synth part MIDI channel,
 KORG,EMX-1,Synth OSC,Synth tune,Fine tune in semitones,,,,,,8,2,0,127,,centered,Sent on the synth part MIDI channel; maps to -50..+50 across the value range,
 KORG,EMX-1,Synth Modulation,Mod speed,Sets the modulation LFO speed,89,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,
-KORG,EMX-1,Synth Modulation,Mod depth,Sets the modulation LFO depth,90,,0,127,,,,,,,centered,Sent on the synth part MIDI channel,0-63: Negative depth; 64: Zero; 65-127: Positive depth
+KORG,EMX-1,Synth Modulation,Mod depth,Sets the modulation LFO depth,90,,0,127,,,,,,,centered,Sent on the synth part MIDI channel,0~63: Negative depth; 64: Zero; 65~127: Positive depth
 KORG,EMX-1,Synth Modulation,Mod type,Selects the modulation source shape,87,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,0-15: Saw; 16-31: Square; 32-47: Triangle; 48-63: S&H; 64-127: EG
 KORG,EMX-1,Synth Modulation,Mod destination,Selects the modulation destination,88,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,0-15: Pitch; 16-31: OSC edit 1; 32-47: OSC edit 2; 48-63: Cutoff; 64-79: Amp; 80-127: Pan
 KORG,EMX-1,Synth Modulation,Mod BPM sync,Synchronizes modulation speed to tempo,82,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,0-63: Off; 64-127: On
 KORG,EMX-1,Synth Filter,Filter type,Selects the filter type,83,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,0-31: LPF; 32-63: HPF; 64-95: BPF; 96-127: BPF+
 KORG,EMX-1,Synth Filter,Cutoff,Filter cutoff frequency,74,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,
 KORG,EMX-1,Synth Filter,Resonance,Filter resonance,71,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,
-KORG,EMX-1,Synth Filter,EG intensity,Filter envelope depth,79,,0,127,,,,,,,centered,Sent on the synth part MIDI channel,0-63: Negative EG; 64: Zero; 65-127: Positive EG
+KORG,EMX-1,Synth Filter,EG intensity,Filter envelope depth,79,,0,127,,,,,,,centered,Sent on the synth part MIDI channel,0~63: Negative EG; 64: Zero; 65~127: Positive EG
 KORG,EMX-1,Synth Filter,Drive,Filter drive amount,84,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,
-KORG,EMX-1,Synth Common,Glide,Glide time,5,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,0: Off; 1-127: Glide amount
+KORG,EMX-1,Synth Common,Glide,Glide time,5,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,0: Off; 1~127: Glide amount
 KORG,EMX-1,Synth Common,Pan,Stereo panning,10,,0,127,,,,,,,centered,Sent on the synth part MIDI channel,
 KORG,EMX-1,Synth Common,EG time,Amp envelope time,75,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,
 KORG,EMX-1,Synth Common,Level,Synth part level,7,,0,127,,,,,,,0-based,Sent on the synth part MIDI channel,
@@ -46,7 +46,7 @@ KORG,EMX-1,Drum 1,Roll,Enables the step roll,,,,,,9,43,0,127,,0-based,Sent on th
 KORG,EMX-1,Drum 1,FX send,Sends the part to the selected FX slot,,,,,,9,45,0,127,,0-based,Sent on the drum part MIDI channel,0-63: Off; 64-127: On
 KORG,EMX-1,Drum 1,FX select,Selects which FX slot the part is routed to,,,,,,9,46,0,127,,0-based,Sent on the drum part MIDI channel,0-42: FX1; 43-85: FX2; 86-127: FX3
 KORG,EMX-1,Drum 1,Mod type,Selects the modulation source shape,,,,,,9,47,0,127,,0-based,Sent on the drum part MIDI channel,0-15: Saw; 16-31: Square; 32-47: Triangle; 48-63: S&H; 64-127: EG
-KORG,EMX-1,Drum 1,Mod depth,Sets the modulation depth,,,,,,9,48,0,127,64,centered,Sent on the drum part MIDI channel,0-63: Negative depth; 64: Zero; 65-127: Positive depth
+KORG,EMX-1,Drum 1,Mod depth,Sets the modulation depth,,,,,,9,48,0,127,64,centered,Sent on the drum part MIDI channel,0~63: Negative depth; 64: Zero; 65~127: Positive depth
 KORG,EMX-1,Drum 1,Mod speed,Sets the modulation speed,,,,,,9,49,0,127,,0-based,Sent on the drum part MIDI channel,
 KORG,EMX-1,Drum 1,Mod destination,Selects the modulation destination,,,,,,9,50,0,127,,0-based,Sent on the drum part MIDI channel,0-15: Pitch; 16-79: Amp; 80-127: Pan
 KORG,EMX-1,Drum 1,Mod BPM sync,Synchronizes modulation speed to tempo,,,,,,9,51,0,127,,0-based,Sent on the drum part MIDI channel,0-63: Off; 64-127: On
@@ -177,8 +177,8 @@ KORG,EMX-1,Accent,Drum accent level,Sets the drum accent level,,,,,,11,98,0,127,
 KORG,EMX-1,Accent,Drum accent motion sequence switch,Enables motion sequence for the drum accent,,,,,,11,99,0,127,,0-based,Sent on the global MIDI channel,0-42: Off; 43-127: Trig hold
 KORG,EMX-1,Global,Swing,Sets the pattern swing amount,,,,,,11,112,0,127,,0-based,Sent on the global MIDI channel; maps 0-127 to 50-75% swing,
 KORG,EMX-1,Global,Roll type,Selects the roll subdivision,,,,,,11,113,0,127,,0-based,Sent on the global MIDI channel,0-42: 2; 43-85: 3; 86-127: 4
-KORG,EMX-1,Global,Synth mute/solo,"Sets mute or solo status for synth parts s1 through s5",,,,,,11,119,0,127,,0-based,Sent on the global MIDI channel; MSB bit 0 selects solo status; LSB bits 0-4 map to synth parts 1-5,
-KORG,EMX-1,Global,Drum mute,"Sets mute status for drum parts d1 through d7B",,,,,,11,120,0,127,,0-based,Sent on the global MIDI channel; MSB bits 0-1 map to drum parts 7A and 7B; LSB bits 0-6 map to drum parts 1 through 6B,
+KORG,EMX-1,Global,Synth mute/solo,Sets mute or solo status for synth parts s1 through s5,,,,,,11,119,0,127,,0-based,Sent on the global MIDI channel; MSB bit 0 selects solo status; LSB bits 0-4 map to synth parts 1-5,
+KORG,EMX-1,Global,Drum mute,Sets mute status for drum parts d1 through d7B,,,,,,11,120,0,127,,0-based,Sent on the global MIDI channel; MSB bits 0-1 map to drum parts 7A and 7B; LSB bits 0-6 map to drum parts 1 through 6B,
 KORG,EMX-1,Global,Bank select MSB,Selects the pattern bank high byte,0,,0,127,,,,,,,0-based,Always 0; combine with Bank select LSB and Program change to recall a pattern (A01~D64),
 KORG,EMX-1,Global,Bank select LSB,Selects the pattern bank low byte,32,,0,127,,,,,,,0-based,0 for banks A/B; 1 for banks C/D; program change 0-63 selects first half; 64-127 selects second half,
 KORG,EMX-1,Global,Reset all controllers,Resets all controllers on the current channel,121,,0,0,,,,,,,0-based,Always enabled,0: Reset all controllers
