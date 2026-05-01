@@ -191,57 +191,79 @@ export function validateRow(row: Row, filename: string): ValidationResult {
 }
 
 // Validate file-level concerns across all rows
-export function validateFile(rows: Row[], filename: string): string[] {
+export function validateFile(rows: Row[], filename: string): ValidationResult {
   const errors: string[] = [];
+  const warnings: string[] = [];
 
   // At least one data row
   if (rows.length === 0) {
     errors.push(filename + ": file has no data rows");
-    return errors;
+    return { errors, warnings };
   }
 
-  // Folder name should match manufacturer field
   const parts = filename.split("/");
-  if (parts.length >= 2) {
-    const folder = parts[parts.length - 2];
-    const manufacturer = rows[0].manufacturer;
-    if (folder !== manufacturer) {
+  const folder = parts.length >= 2
+    ? parts[parts.length - 2].normalize("NFC")
+    : null;
+  const basename = parts.length >= 1
+    ? parts[parts.length - 1].replace(/\.csv$/, "").normalize("NFC")
+    : null;
+
+  // Check every row: manufacturer must match folder, device must match file
+  // name. Deduplicate so N rows sharing a wrong value only error once.
+  const seenManufacturer = new Set<string>();
+  const seenDevice = new Set<string>();
+  const seenMfrWhitespace = new Set<string>();
+  const seenDevWhitespace = new Set<string>();
+  for (const row of rows) {
+    const manufacturer = row.manufacturer.normalize("NFC");
+    const device = row.device.normalize("NFC");
+
+    if (
+      folder !== null && manufacturer !== folder &&
+      !seenManufacturer.has(manufacturer)
+    ) {
+      seenManufacturer.add(manufacturer);
       errors.push(
-        filename + ': folder "' + folder +
-          '" does not match manufacturer "' + manufacturer + '"',
+        filename + ":" + row.line + ' manufacturer "' + manufacturer +
+          '" does not match folder "' + folder + '"',
+      );
+    }
+    if (
+      basename !== null && device !== basename && !seenDevice.has(device)
+    ) {
+      seenDevice.add(device);
+      // "/" is illegal in file names; accept ":" as a stand-in but warn so
+      // the substitution stays visible.
+      const msg = filename + ":" + row.line + ' device "' + device +
+        '" does not match file name "' + basename + '"';
+      if (device.includes("/") && basename.replaceAll(":", "/") === device) {
+        warnings.push(msg);
+      } else {
+        errors.push(msg);
+      }
+    }
+
+    if (
+      row.manufacturer !== row.manufacturer.trim() &&
+      !seenMfrWhitespace.has(row.manufacturer)
+    ) {
+      seenMfrWhitespace.add(row.manufacturer);
+      errors.push(
+        filename + ":" + row.line +
+          " manufacturer has leading/trailing whitespace",
+      );
+    }
+    if (
+      row.device !== row.device.trim() && !seenDevWhitespace.has(row.device)
+    ) {
+      seenDevWhitespace.add(row.device);
+      errors.push(
+        filename + ":" + row.line +
+          " device has leading/trailing whitespace",
       );
     }
   }
 
-  // All rows should have the same manufacturer and device
-  const firstManufacturer = rows[0].manufacturer;
-  const firstDevice = rows[0].device;
-  for (let i = 1; i < rows.length; i++) {
-    if (rows[i].manufacturer !== firstManufacturer) {
-      errors.push(
-        filename + ":" + rows[i].line + ' has manufacturer "' +
-          rows[i].manufacturer + '", expected "' + firstManufacturer + '"',
-      );
-      break;
-    }
-    if (rows[i].device !== firstDevice) {
-      errors.push(
-        filename + ":" + rows[i].line + ' has device "' +
-          rows[i].device + '", expected "' + firstDevice + '"',
-      );
-      break;
-    }
-  }
-
-  // Whitespace in manufacturer/device
-  if (firstManufacturer !== firstManufacturer.trim()) {
-    errors.push(
-      filename + ": manufacturer has leading/trailing whitespace",
-    );
-  }
-  if (firstDevice !== firstDevice.trim()) {
-    errors.push(filename + ": device has leading/trailing whitespace");
-  }
-
-  return errors;
+  return { errors, warnings };
 }

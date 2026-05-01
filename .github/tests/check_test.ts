@@ -5,6 +5,11 @@ import { validateFile, validateRow } from "./validate.ts";
 
 const ROOT = new URL("../../", import.meta.url).pathname;
 
+function isExcluded(absPath: string): boolean {
+  // template.csv at the repo root is a scaffolding file, not a real definition.
+  return resolve(absPath) === resolve(ROOT, "template.csv");
+}
+
 async function collectCSVFiles(): Promise<string[]> {
   // If CSV_FILES env var is set, use only those (relative paths from repo root)
   const csvFilesEnv = Deno.env.get("CSV_FILES");
@@ -13,12 +18,14 @@ async function collectCSVFiles(): Promise<string[]> {
       .split("\n")
       .map((f) => f.trim())
       .filter((f) => f.length > 0 && f.endsWith(".csv"))
-      .map((f) => resolve(ROOT, f));
+      .map((f) => resolve(ROOT, f))
+      .filter((f) => !isExcluded(f));
   }
 
   // Otherwise walk all CSV files
   const files: string[] = [];
   for await (const entry of walk(ROOT, { exts: [".csv"] })) {
+    if (isExcluded(entry.path)) continue;
     files.push(entry.path);
   }
   files.sort();
@@ -44,7 +51,9 @@ Deno.test("CSV validation", async () => {
     const content = await Deno.readTextFile(file);
     const { rows, errors: parseErrors } = parseCSV(content, rel);
     allErrors.push(...parseErrors);
-    allErrors.push(...validateFile(rows, rel));
+    const fileResult = validateFile(rows, rel);
+    allErrors.push(...fileResult.errors);
+    allWarnings.push(...fileResult.warnings);
 
     for (const row of rows) {
       const { errors, warnings } = validateRow(row, rel);
