@@ -130,6 +130,10 @@ export function validateTriggerFile(
   const seenDevice = new Set<string>();
   const seenMfrWhitespace = new Set<string>();
   const seenDevWhitespace = new Set<string>();
+  // First line where each (section, sound_name) pair was seen. Duplicates are
+  // a warning, not an error: some devices genuinely map the same sound to
+  // multiple notes (e.g. the GM drum map assigns two notes per DrumStation tom).
+  const firstSoundLine = new Map<string, number>();
   for (const row of rows) {
     const manufacturer = row.manufacturer.normalize("NFC");
     const device = row.device.normalize("NFC");
@@ -171,6 +175,19 @@ export function validateTriggerFile(
       errors.push(
         filename + ":" + row.line +
           " device has leading/trailing whitespace",
+      );
+    }
+
+    const soundKey = row.section.normalize("NFC") + "|" +
+      row.sound_name.normalize("NFC");
+    const firstLine = firstSoundLine.get(soundKey);
+    if (firstLine === undefined) {
+      firstSoundLine.set(soundKey, row.line);
+    } else {
+      warnings.push(
+        filename + ":" + row.line + ' duplicate sound_name "' +
+          row.sound_name + '" in section "' + row.section +
+          '" (first seen on line ' + firstLine + ")",
       );
     }
   }
